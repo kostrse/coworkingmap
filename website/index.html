@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+
+  <title>Coworking in Koh Samui</title>
+
+  <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="/css/main.min.css"/>
+
+  <script src="/bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="/bower_components/mustache.js/mustache.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js"></script>
+  <script src="/scripts/main.min.js"></script>
+
+  <script id="coworkingInfoTemplate" type="x-tmpl-mustache">
+    <div class="coworkingInfoCard">
+  	    <div class="coworkingInfoPhoto">
+  	        <img src="{{ image }}" alt="{{ name }}">
+        </div>
+  	    <div class="coworkingInfoRow">
+  	        <b>{{ name }}</b>
+        </div>
+  	    <div class="coworkingInfoRow">
+  	        Location: {{ locationDescr }}
+        </div>
+        {{#closed}}
+  	    <div class="coworkingInfoRow">
+  	        <span class="closed">Closed</span>
+        </div>
+        {{/closed}}
+    </div>
+  </script>
+</head>
+<body>
+  <nav class="navbar navbar-fixed-top navbar-default" role="navigation">
+    <div class="container-fluid">
+      <!-- Navigation bar -->
+      <div class="navbar-header">
+        <a class="navbar-brand" href="/">Coworking Map</a>
+      </div>
+    </div>
+  </nav>
+
+  <div id="map-canvas"></div>
+</body>
+</html>

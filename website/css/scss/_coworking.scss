@@ -1,0 +1,21 @@
+.coworkingInfoCard {
+    font-family: sans-serif;
+
+    .coworkingInfoPhoto {
+        padding: 10px 0;
+
+        img {
+            width: 400px;
+            height: 200px;
+        }
+    }
+
+    .coworkingInfoRow {
+        padding: 0.25em 0;
+    }
+
+    .closed {
+        font-weight: bold;
+        color: red;
+    }
+}

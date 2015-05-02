@@ -1,0 +1,11 @@
+{
+  "name": "coworkingmap",
+  "version": "1.0.0",
+  "description": "A demo website with Kudu deployment script for Azure Web Apps.",
+  "private": true,
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "bootstrap": "~3.3.4",
+    "mustache.js": "~2.0.0"
+  }
+}
